@@ -27,7 +27,7 @@
                                         <rect key="frame" x="144" y="30" width="86" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="fmG-92-O4X"/>
-                                            <constraint firstAttribute="width" constant="80" id="ykA-BD-8l7"/>
+                                            <constraint firstAttribute="width" constant="54.5" id="ykA-BD-8l7"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
                                         <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,7 +81,7 @@
         <!--AuthVC-->
         <scene sceneID="6sE-f3-aHs">
             <objects>
-                <viewController storyboardIdentifier="AuthVC" id="nHq-ey-bfl" customClass="AuthVC" customModule="breakpoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthVC" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nHq-ey-bfl" customClass="AuthVC" customModule="breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Okw-oI-v2F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,6 +116,9 @@
                                                 <state key="normal" title="LOGIN WITH FB">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="facebookSignInBtnWasPressed:" destination="nHq-ey-bfl" eventType="touchUpInside" id="Nd1-Dy-jW8"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2b-Lp-n4b">
                                                 <rect key="frame" x="0.0" y="177" width="303" height="78.5"/>
@@ -123,6 +126,9 @@
                                                 <state key="normal" title="LOGIN WITH G+">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="googleSigInBtnWasPressed:" destination="nHq-ey-bfl" eventType="touchUpInside" id="UQS-mr-AHL"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgM-Gg-lYi">
                                                 <rect key="frame" x="0.0" y="265.5" width="303" height="78.5"/>
@@ -141,6 +147,9 @@
                                         <state key="normal" title=" by email" image="emailIcon">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInWithEmailBtnWasPressed:" destination="nHq-ey-bfl" eventType="touchUpInside" id="koG-br-FUw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25490196078431371" green="0.27058823529411763" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
@@ -173,25 +182,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQm-6B-QsK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-794.39999999999998" y="1247.2263868065968"/>
+            <point key="canvasLocation" x="-812" y="1252"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="N6l-Mc-ibi">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="8hq-2E-AQj" customClass="LoginVC" customModule="breakpoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8hq-2E-AQj" customClass="LoginVC" customModule="breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zai-SO-Vfw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwS-u3-fME">
-                                <rect key="frame" x="147.5" y="246" width="80" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="fSI-9l-Z4G"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
-                                <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YZP-DC-tnx">
                                 <rect key="frame" x="52" y="66" width="287" height="160"/>
                                 <subviews>
@@ -226,20 +226,40 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rX-6y-6dY">
                                 <rect key="frame" x="16" y="24" width="21" height="22"/>
                                 <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="closeBtnWasPressed:" destination="8hq-2E-AQj" eventType="touchUpInside" id="rPa-zS-2bq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA9-hT-0WM">
+                                <rect key="frame" x="151.5" y="246" width="72" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="BDt-UK-abg"/>
+                                    <constraint firstAttribute="height" constant="32" id="JPR-N8-H7g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="tintColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="SIGN IN"/>
+                                <connections>
+                                    <action selector="signInBtnWasPressed:" destination="8hq-2E-AQj" eventType="touchUpInside" id="fLI-c6-Fco"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yjV-Gg-iYX"/>
                         <color key="backgroundColor" red="0.25490196078431371" green="0.27058823529411763" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YZP-DC-tnx" firstAttribute="top" secondItem="7rX-6y-6dY" secondAttribute="bottom" constant="20" id="64W-T7-gml"/>
-                            <constraint firstItem="uwS-u3-fME" firstAttribute="centerX" secondItem="Zai-SO-Vfw" secondAttribute="centerX" id="Dsw-DH-kfh"/>
+                            <constraint firstItem="CA9-hT-0WM" firstAttribute="top" secondItem="YZP-DC-tnx" secondAttribute="bottom" constant="20" id="9Zs-cx-N4x"/>
+                            <constraint firstItem="CA9-hT-0WM" firstAttribute="centerX" secondItem="Zai-SO-Vfw" secondAttribute="centerX" id="Ki4-FC-u8W"/>
                             <constraint firstItem="7rX-6y-6dY" firstAttribute="leading" secondItem="yjV-Gg-iYX" secondAttribute="leading" constant="16" id="OJD-3f-EPv"/>
                             <constraint firstItem="7rX-6y-6dY" firstAttribute="top" secondItem="yjV-Gg-iYX" secondAttribute="top" constant="24" id="QQW-xS-sG3"/>
-                            <constraint firstItem="uwS-u3-fME" firstAttribute="top" secondItem="YZP-DC-tnx" secondAttribute="bottom" constant="20" id="S5r-5c-W50"/>
                             <constraint firstItem="yjV-Gg-iYX" firstAttribute="trailing" secondItem="YZP-DC-tnx" secondAttribute="trailing" constant="36" id="rMG-TK-VxM"/>
                             <constraint firstItem="YZP-DC-tnx" firstAttribute="leading" secondItem="Zai-SO-Vfw" secondAttribute="leadingMargin" constant="36" id="tEK-2q-SBx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="eDN-XP-e1A" id="GSp-gw-m8R"/>
+                        <outlet property="passwordField" destination="5AL-QR-ZRs" id="GEH-Jy-Zsn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0VZ-jL-t0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
