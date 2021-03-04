@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BB19FC20B9CEB347295E0A03 /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E54D4BA6FC6D4C8DB71D0C /* Pods_breakpoint.framework */; };
+		DB2A5BA725F0C7A600CAB8CD /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A5BA625F0C7A600CAB8CD /* AuthVC.swift */; };
+		DB2A5BAA25F0C7E700CAB8CD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A5BA925F0C7E700CAB8CD /* LoginVC.swift */; };
+		DB2A5BAD25F0C84A00CAB8CD /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A5BAC25F0C84A00CAB8CD /* InsetTextField.swift */; };
+		DB2A5BB025F0CDAB00CAB8CD /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A5BAF25F0CDAB00CAB8CD /* ShadowView.swift */; };
 		DB53D2CD25EFEB03003D22AA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB53D2CC25EFEB03003D22AA /* DataService.swift */; };
 		DB6B9A4C25EFF77500C63DA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB6B9A4B25EFF77500C63DA8 /* GoogleService-Info.plist */; };
 		DB77453925EFD63C008B1CC0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77453825EFD63C008B1CC0 /* FirstViewController.swift */; };
@@ -24,6 +28,10 @@
 		284351D1DC300317BB63F15C /* Pods-breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.debug.xcconfig"; path = "Target Support Files/Pods-breakpoint/Pods-breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
 		BC39EC74551186051008F3ED /* Pods-breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.release.xcconfig"; path = "Target Support Files/Pods-breakpoint/Pods-breakpoint.release.xcconfig"; sourceTree = "<group>"; };
 		C0E54D4BA6FC6D4C8DB71D0C /* Pods_breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2A5BA625F0C7A600CAB8CD /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		DB2A5BA925F0C7E700CAB8CD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		DB2A5BAC25F0C84A00CAB8CD /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		DB2A5BAF25F0CDAB00CAB8CD /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		DB53D2CC25EFEB03003D22AA /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		DB6B9A4B25EFF77500C63DA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB77453825EFD63C008B1CC0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +73,8 @@
 				DBF71DAB25EFD3C500D5054C /* ViewController.swift */,
 				DB77453825EFD63C008B1CC0 /* FirstViewController.swift */,
 				DB77453C25EFD64D008B1CC0 /* SecondViewController.swift */,
+				DB2A5BA625F0C7A600CAB8CD /* AuthVC.swift */,
+				DB2A5BA925F0C7E700CAB8CD /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -72,6 +82,8 @@
 		DB77453F25EFD6D5008B1CC0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DB2A5BAC25F0C84A00CAB8CD /* InsetTextField.swift */,
+				DB2A5BAF25F0CDAB00CAB8CD /* ShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,10 +272,14 @@
 			files = (
 				DBF71DAC25EFD3C500D5054C /* ViewController.swift in Sources */,
 				DBF71DA825EFD3C500D5054C /* AppDelegate.swift in Sources */,
+				DB2A5BAA25F0C7E700CAB8CD /* LoginVC.swift in Sources */,
 				DBF71DAA25EFD3C500D5054C /* SceneDelegate.swift in Sources */,
+				DB2A5BB025F0CDAB00CAB8CD /* ShadowView.swift in Sources */,
 				DB53D2CD25EFEB03003D22AA /* DataService.swift in Sources */,
+				DB2A5BA725F0C7A600CAB8CD /* AuthVC.swift in Sources */,
 				DB77453D25EFD64D008B1CC0 /* SecondViewController.swift in Sources */,
 				DB77453925EFD63C008B1CC0 /* FirstViewController.swift in Sources */,
+				DB2A5BAD25F0C84A00CAB8CD /* InsetTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
