@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		BB19FC20B9CEB347295E0A03 /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E54D4BA6FC6D4C8DB71D0C /* Pods_breakpoint.framework */; };
 		DB53D2CD25EFEB03003D22AA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB53D2CC25EFEB03003D22AA /* DataService.swift */; };
+		DB6B9A4C25EFF77500C63DA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB6B9A4B25EFF77500C63DA8 /* GoogleService-Info.plist */; };
 		DB77453925EFD63C008B1CC0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77453825EFD63C008B1CC0 /* FirstViewController.swift */; };
 		DB77453D25EFD64D008B1CC0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77453C25EFD64D008B1CC0 /* SecondViewController.swift */; };
-		DB77454525EFDE71008B1CC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB77454425EFDE71008B1CC0 /* GoogleService-Info.plist */; };
 		DBF71DA825EFD3C500D5054C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF71DA725EFD3C500D5054C /* AppDelegate.swift */; };
 		DBF71DAA25EFD3C500D5054C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF71DA925EFD3C500D5054C /* SceneDelegate.swift */; };
 		DBF71DAC25EFD3C500D5054C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF71DAB25EFD3C500D5054C /* ViewController.swift */; };
@@ -25,9 +25,9 @@
 		BC39EC74551186051008F3ED /* Pods-breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.release.xcconfig"; path = "Target Support Files/Pods-breakpoint/Pods-breakpoint.release.xcconfig"; sourceTree = "<group>"; };
 		C0E54D4BA6FC6D4C8DB71D0C /* Pods_breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB53D2CC25EFEB03003D22AA /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		DB6B9A4B25EFF77500C63DA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB77453825EFD63C008B1CC0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		DB77453C25EFD64D008B1CC0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		DB77454425EFDE71008B1CC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBF71DA425EFD3C500D5054C /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF71DA725EFD3C500D5054C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF71DA925EFD3C500D5054C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				DBF71DAD25EFD3C500D5054C /* Main.storyboard */,
 				DBF71DB025EFD3C500D5054C /* Assets.xcassets */,
 				DBF71DB225EFD3C500D5054C /* LaunchScreen.storyboard */,
-				DB77454425EFDE71008B1CC0 /* GoogleService-Info.plist */,
+				DB6B9A4B25EFF77500C63DA8 /* GoogleService-Info.plist */,
 				DBF71DB525EFD3C500D5054C /* Info.plist */,
 			);
 			path = breakpoint;
@@ -203,7 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF71DB425EFD3C500D5054C /* LaunchScreen.storyboard in Resources */,
-				DB77454525EFDE71008B1CC0 /* GoogleService-Info.plist in Resources */,
+				DB6B9A4C25EFF77500C63DA8 /* GoogleService-Info.plist in Resources */,
 				DBF71DB125EFD3C500D5054C /* Assets.xcassets in Resources */,
 				DBF71DAF25EFD3C500D5054C /* Main.storyboard in Resources */,
 			);
