@@ -18,6 +18,7 @@
 		DB53D2CD25EFEB03003D22AA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB53D2CC25EFEB03003D22AA /* DataService.swift */; };
 		DB77453925EFD63C008B1CC0 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77453825EFD63C008B1CC0 /* FeedVC.swift */; };
 		DB77453D25EFD64D008B1CC0 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77453C25EFD64D008B1CC0 /* GroupsVC.swift */; };
+		DB91310425F21FF600AFCF9A /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB91310325F21FF600AFCF9A /* CreatePostVC.swift */; };
 		DBF71DA825EFD3C500D5054C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF71DA725EFD3C500D5054C /* AppDelegate.swift */; };
 		DBF71DAA25EFD3C500D5054C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF71DA925EFD3C500D5054C /* SceneDelegate.swift */; };
 		DBF71DAF25EFD3C500D5054C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF71DAD25EFD3C500D5054C /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		DB53D2CC25EFEB03003D22AA /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		DB77453825EFD63C008B1CC0 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		DB77453C25EFD64D008B1CC0 /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
+		DB91310325F21FF600AFCF9A /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		DBF71DA425EFD3C500D5054C /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF71DA725EFD3C500D5054C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF71DA925EFD3C500D5054C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				DB2A5BA625F0C7A600CAB8CD /* AuthVC.swift */,
 				DB2A5BA925F0C7E700CAB8CD /* LoginVC.swift */,
 				DB2A5BBC25F1367200CAB8CD /* MeVC.swift */,
+				DB91310325F21FF600AFCF9A /* CreatePostVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				DB53D2CD25EFEB03003D22AA /* DataService.swift in Sources */,
 				DB2A5BA725F0C7A600CAB8CD /* AuthVC.swift in Sources */,
 				DB2A5BBD25F1367200CAB8CD /* MeVC.swift in Sources */,
+				DB91310425F21FF600AFCF9A /* CreatePostVC.swift in Sources */,
 				DB77453D25EFD64D008B1CC0 /* GroupsVC.swift in Sources */,
 				DB77453925EFD63C008B1CC0 /* FeedVC.swift in Sources */,
 				DB2A5BAD25F0C84A00CAB8CD /* InsetTextField.swift in Sources */,
