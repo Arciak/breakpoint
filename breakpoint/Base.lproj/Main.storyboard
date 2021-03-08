@@ -30,7 +30,7 @@
                                         <rect key="frame" x="120" y="29" width="135" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="fmG-92-O4X"/>
-                                            <constraint firstAttribute="width" constant="54.5" id="ykA-BD-8l7"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="54" id="ykA-BD-8l7"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
                                         <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -333,7 +333,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="_newgroup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aC2-id-f7P">
                                         <rect key="frame" x="129" y="36" width="116" height="22"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="54.5" id="69C-54-Mza"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="54" id="69C-54-Mza"/>
                                             <constraint firstAttribute="height" constant="21" id="ERA-DS-Fl5"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
