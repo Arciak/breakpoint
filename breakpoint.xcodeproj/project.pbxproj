@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BB19FC20B9CEB347295E0A03 /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E54D4BA6FC6D4C8DB71D0C /* Pods_breakpoint.framework */; };
 		DB1EF6A225F61D61002139BF /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1EF6A125F61D61002139BF /* CreateGroupsVC.swift */; };
+		DB1EF6A525F6230F002139BF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1EF6A425F6230F002139BF /* UserCell.swift */; };
 		DB2A5BA725F0C7A600CAB8CD /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A5BA625F0C7A600CAB8CD /* AuthVC.swift */; };
 		DB2A5BAA25F0C7E700CAB8CD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A5BA925F0C7E700CAB8CD /* LoginVC.swift */; };
 		DB2A5BAD25F0C84A00CAB8CD /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A5BAC25F0C84A00CAB8CD /* InsetTextField.swift */; };
@@ -35,6 +36,7 @@
 		BC39EC74551186051008F3ED /* Pods-breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.release.xcconfig"; path = "Target Support Files/Pods-breakpoint/Pods-breakpoint.release.xcconfig"; sourceTree = "<group>"; };
 		C0E54D4BA6FC6D4C8DB71D0C /* Pods_breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1EF6A125F61D61002139BF /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
+		DB1EF6A425F6230F002139BF /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		DB2A5BA625F0C7A600CAB8CD /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		DB2A5BA925F0C7E700CAB8CD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		DB2A5BAC25F0C84A00CAB8CD /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				DB2A5BAC25F0C84A00CAB8CD /* InsetTextField.swift */,
 				DB2A5BAF25F0CDAB00CAB8CD /* ShadowView.swift */,
 				DB91310925F23F0F00AFCF9A /* FeedCell.swift */,
+				DB1EF6A425F6230F002139BF /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				DBF71DA825EFD3C500D5054C /* AppDelegate.swift in Sources */,
 				DB2A5BAA25F0C7E700CAB8CD /* LoginVC.swift in Sources */,
 				DBF71DAA25EFD3C500D5054C /* SceneDelegate.swift in Sources */,
+				DB1EF6A525F6230F002139BF /* UserCell.swift in Sources */,
 				DB2A5BB025F0CDAB00CAB8CD /* ShadowView.swift in Sources */,
 				DB2A5BB325F0DAB900CAB8CD /* AuthService.swift in Sources */,
 				DB53D2CD25EFEB03003D22AA /* DataService.swift in Sources */,
