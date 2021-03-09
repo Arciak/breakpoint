@@ -26,7 +26,7 @@ class DataService {
         return _REF_USERS
     }
     
-    var REF_GROUP: DatabaseReference {
+    var REF_GROUPS: DatabaseReference {
         return _REF_GROUPS
     }
     
@@ -52,7 +52,8 @@ class DataService {
     
     func uploadPost(withMessage message: String, forUID uid: String, withGroupKey groupKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
         if groupKey != nil {
-            //send to group ref
+            REF_GROUPS.child(groupKey!).child("messages").childByAutoId().updateChildValues(["content": message, "senderId": uid])
+            sendComplete(true)
         } else {
             REF_FEED.childByAutoId().updateChildValues(["content": message, "senderId": uid])
             sendComplete(true)
@@ -72,6 +73,20 @@ class DataService {
             }
             
             handler(messageArray)
+        }
+    }
+    
+    func getAllMessagesFor(desiredGroup: Group, handler: @escaping (_ messagesArray: [Message]) -> ()) {
+        var groupMesssageArray = [Message]()
+        REF_GROUPS.child(desiredGroup.key).child("messages").observeSingleEvent(of: .value) { (groupMessageSnapshot) in
+            guard let groupMessageSnapshot = groupMessageSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for groupMessage in groupMessageSnapshot {
+                let content = groupMessage.childSnapshot(forPath: "content").value as! String
+                let senderId = groupMessage.childSnapshot(forPath: "senderId").value as! String
+                let groupMessage = Message(content: content, senderId: senderId)
+                groupMesssageArray.append(groupMessage)
+            }
+            handler(groupMesssageArray)
         }
     }
     
@@ -121,13 +136,13 @@ class DataService {
     }
     
     func createGroup(withTitle title: String, andDescritpion descritpion: String, forUserIds ids: [String], handler: @escaping (_ groupCreated: Bool) -> ()) {
-        REF_GROUP.childByAutoId().updateChildValues(["title": title, "description": descritpion, "members": ids])
+        REF_GROUPS.childByAutoId().updateChildValues(["title": title, "description": descritpion, "members": ids])
         handler(true)
     }
     
     func getAllGroups(handler: @escaping (_ groupsArray: [Group]) -> ()) {
         var groupsArray = [Group]()
-        REF_GROUP.observeSingleEvent(of: .value) { (groupSnapshot) in
+        REF_GROUPS.observeSingleEvent(of: .value) { (groupSnapshot) in
             guard let groupSnapshot = groupSnapshot.children.allObjects as? [DataSnapshot] else { return }
             
             for group in groupSnapshot {
