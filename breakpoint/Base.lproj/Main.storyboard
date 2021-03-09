@@ -234,7 +234,7 @@
         <!--Group FeedVC-->
         <scene sceneID="a9I-5F-1ht">
             <objects>
-                <viewController id="RIE-mo-fhG" customClass="GroupFeedVC" customModule="breakpoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupFeedVC" modalPresentationStyle="fullScreen" id="RIE-mo-fhG" customClass="GroupFeedVC" customModule="breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gf4-4t-Sxv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
