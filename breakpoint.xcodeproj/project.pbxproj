@@ -25,10 +25,12 @@
 		DB77453925EFD63C008B1CC0 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77453825EFD63C008B1CC0 /* FeedVC.swift */; };
 		DB77453D25EFD64D008B1CC0 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77453C25EFD64D008B1CC0 /* GroupsVC.swift */; };
 		DB83B66825F7874700990D59 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B66725F7874700990D59 /* UIViewControllerExt.swift */; };
+		DB83B68425F7E1FB00990D59 /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B68325F7E1FB00990D59 /* UIImageExt.swift */; };
 		DB91310425F21FF600AFCF9A /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB91310325F21FF600AFCF9A /* CreatePostVC.swift */; };
 		DB91310725F22C1D00AFCF9A /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB91310625F22C1D00AFCF9A /* UIViewExt.swift */; };
 		DB91310A25F23F0F00AFCF9A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB91310925F23F0F00AFCF9A /* FeedCell.swift */; };
 		DB91310E25F2449A00AFCF9A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB91310D25F2449A00AFCF9A /* Message.swift */; };
+		DBE1ED6925F7FDF4005FC017 /* ShowGroupDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE1ED6825F7FDF4005FC017 /* ShowGroupDetailCell.swift */; };
 		DBF71DA825EFD3C500D5054C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF71DA725EFD3C500D5054C /* AppDelegate.swift */; };
 		DBF71DAA25EFD3C500D5054C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF71DA925EFD3C500D5054C /* SceneDelegate.swift */; };
 		DBF71DAF25EFD3C500D5054C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF71DAD25EFD3C500D5054C /* Main.storyboard */; };
@@ -57,10 +59,12 @@
 		DB77453825EFD63C008B1CC0 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		DB77453C25EFD64D008B1CC0 /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		DB83B66725F7874700990D59 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		DB83B68325F7E1FB00990D59 /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 		DB91310325F21FF600AFCF9A /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		DB91310625F22C1D00AFCF9A /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		DB91310925F23F0F00AFCF9A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		DB91310D25F2449A00AFCF9A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		DBE1ED6825F7FDF4005FC017 /* ShowGroupDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGroupDetailCell.swift; sourceTree = "<group>"; };
 		DBF71DA425EFD3C500D5054C /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF71DA725EFD3C500D5054C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF71DA925EFD3C500D5054C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 				DB91310925F23F0F00AFCF9A /* FeedCell.swift */,
 				DB1EF6A425F6230F002139BF /* UserCell.swift */,
 				DB1EF6AE25F69C5F002139BF /* GroupFeedCell.swift */,
+				DBE1ED6825F7FDF4005FC017 /* ShowGroupDetailCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			children = (
 				DB91310625F22C1D00AFCF9A /* UIViewExt.swift */,
 				DB83B66725F7874700990D59 /* UIViewControllerExt.swift */,
+				DB83B68325F7E1FB00990D59 /* UIImageExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -315,9 +321,11 @@
 				DB2A5BB025F0CDAB00CAB8CD /* ShadowView.swift in Sources */,
 				DB1EF6AC25F66A36002139BF /* Group.swift in Sources */,
 				DB2A5BB325F0DAB900CAB8CD /* AuthService.swift in Sources */,
+				DB83B68425F7E1FB00990D59 /* UIImageExt.swift in Sources */,
 				DB53D2CD25EFEB03003D22AA /* DataService.swift in Sources */,
 				DB2A5BA725F0C7A600CAB8CD /* AuthVC.swift in Sources */,
 				DB1EF6A825F66485002139BF /* GroupCell.swift in Sources */,
+				DBE1ED6925F7FDF4005FC017 /* ShowGroupDetailCell.swift in Sources */,
 				DB83B66825F7874700990D59 /* UIViewControllerExt.swift in Sources */,
 				DB2A5BBD25F1367200CAB8CD /* MeVC.swift in Sources */,
 				DB91310A25F23F0F00AFCF9A /* FeedCell.swift in Sources */,

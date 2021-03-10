@@ -7,8 +7,10 @@
 
 import Foundation
 import Firebase
+import FirebaseStorage
 
 let DB_BASE = Database.database().reference()
+let STORAGE_REF = Storage.storage().reference()
 
 class DataService {
     static let instance = DataService()
@@ -17,6 +19,7 @@ class DataService {
     private var _REF_USERS = DB_BASE.child("users")
     private var _REF_GROUPS = DB_BASE.child("gropus")
     private var _REF_FEED = DB_BASE.child("feed")
+    private var _REF_PHOTOS = DB_BASE.child("photos")
     
     var REF_BASE: DatabaseReference {
         return _REF_BASE
@@ -34,8 +37,42 @@ class DataService {
         return _REF_FEED
     }
     
+    var REF_PHOTOS: DatabaseReference {
+        return _REF_PHOTOS
+    }
+    
     func createDBUser(uid: String, userData: Dictionary<String, Any>) {
         REF_USERS.child(uid).updateChildValues(userData)
+    }
+    
+    func uploadProfilePhoto(forUid uid: String, photoData data: Data, handler: @escaping(_ photoUploaded: Bool) -> ()) {
+        let storageRef = STORAGE_REF
+        let riversRef = storageRef.child("\(uid).jpg")
+        _ = riversRef.putData(data, metadata: nil) { metadata, error in
+            guard metadata != nil else {
+                print(error ?? "default value")
+                return }
+            self.REF_PHOTOS.childByAutoId().updateChildValues(["senderID": uid , "photoPath": "\(uid).jpg"])
+        }
+    }
+    
+    func downloadAllProfilePhoto(forUsernamesIds uid: String, handler: @escaping (_ photo: UIImage) -> ()) {
+        let image = UIImage(named: "defaultProfileImage")
+        let islandRef = STORAGE_REF.child("\(uid).jpg")
+        if  islandRef.fullPath != "" {
+            islandRef.getData(maxSize: 512 * 1024) { data, error in
+                if let error = error {
+                    handler(image!)
+                    print(error)
+                } else {
+                    // Data for "images/island.jpg" is returned
+                    let image = UIImage(data: data!)
+                    handler(image!)
+                }
+            }
+        } else {
+            handler(image!)
+        }
     }
     
     func getUsername(forUID uid: String, handler: @escaping (_ username: String) -> ()) {

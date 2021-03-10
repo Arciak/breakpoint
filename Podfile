@@ -6,8 +6,10 @@ target 'breakpoint' do
   use_frameworks!
 
   # Pods for breakpoint
+  #pod 'FirebaseInAppMessaging', '0.16.0'
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
 
 end
